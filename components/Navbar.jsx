@@ -81,7 +81,7 @@ const Navbar = ({ isActive }) => {
             NỘI DUNG <br />
             CHƯƠNG TRÌNH
           </Link>
-          <Link href="#">
+          <Link href="https://actioncoachcbd.com/" target="_blank">
             GIỚI THIỆU VỀ <br />
             ACTIONCOACH CBD FIRM
           </Link>
