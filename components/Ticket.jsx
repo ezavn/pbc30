@@ -42,7 +42,7 @@ function Ticket() {
     ],
   };
   return (
-    <section className="bg-darkBlue md:py-section py-sectionMB">
+    <section className="pb-9 bg-darkBlue md:pt-section pt-sectionMB">
       <div className="page-container max-w-[1010px]">
         <div className="flex flex-col items-center justify-center mb-10 md:mb-16">
           <Image

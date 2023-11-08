@@ -268,3 +268,61 @@ export const tickets = [
     image: "/images/ticket3.png",
   },
 ];
+
+export const collection1 = [
+  {
+    id: 1,
+    image: "/images/coll1-1.png",
+  },
+  {
+    id: 2,
+    image: "/images/coll1-2.png",
+  },
+  {
+    id: 3,
+    image: "/images/coll1-3.png",
+  },
+  {
+    id: 4,
+    image: "/images/coll1-4.png",
+  },
+  {
+    id: 5,
+    image: "/images/coll1-5.png",
+  },
+  {
+    id: 6,
+    image: "/images/coll1-6.png",
+  },
+];
+
+export const collection2 = [
+  {
+    id: 1,
+    image: "/images/coll2-1.png",
+  },
+  {
+    id: 2,
+    image: "/images/coll2-2.png",
+  },
+  {
+    id: 3,
+    image: "/images/coll2-3.png",
+  },
+  {
+    id: 4,
+    image: "/images/coll2-4.png",
+  },
+  {
+    id: 5,
+    image: "/images/coll2-5.png",
+  },
+  {
+    id: 6,
+    image: "/images/coll2-6.png",
+  },
+  // {
+  //   id: 7,
+  //   image: "/images/coll2-7.png",
+  // },
+];

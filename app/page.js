@@ -20,6 +20,7 @@ import Active from "@/components/Active";
 import Ticket from "@/components/Ticket";
 import RegisterPopup from "@/components/RegisterPopup";
 import Footer from "@/components/Footer";
+import Collections from "@/components/Collections";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -52,6 +53,7 @@ export default function Home() {
             <Process />
             <Active />
             <Ticket />
+            <Collections />
             <RegisterPopup />
             <Footer />
           </PopupProvider>
