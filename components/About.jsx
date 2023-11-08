@@ -28,7 +28,7 @@ function About() {
         </div>
         <div className="flex-col flex-1 font-semibold text-justify text-black lg:flex-row md:text-left">
           <div className="flex items-center mb-[30px]">
-            <h2 className="text-white text-[38px] md:text-[64px] font-bold leading-[30px] md:leading-[50px] uppercase">
+            <h2 className="text-white text-[38px] md:text-[64px] font-bold leading-[40px] md:leading-[50px] uppercase">
               Planning <br /> Bootcamp
             </h2>
             <div className="relative leading-[30px] md:leading-[50px]">

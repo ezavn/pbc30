@@ -21,6 +21,7 @@ import Ticket from "@/components/Ticket";
 import RegisterPopup from "@/components/RegisterPopup";
 import Footer from "@/components/Footer";
 import Collections from "@/components/Collections";
+import Testi from "@/components/Testi";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -52,6 +53,7 @@ export default function Home() {
             <Benefit />
             <Process />
             <Active />
+            <Testi />
             <Ticket />
             <Collections />
             <RegisterPopup />

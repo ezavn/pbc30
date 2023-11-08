@@ -9,7 +9,7 @@ function Mission() {
     arrows: false,
     infinite: true,
     autoplay: true,
-    speed: 5000,
+    speed: 500,
     autoplaySpeed: 2000,
     cssEase: "linear",
     slidesToShow: 4,
@@ -90,7 +90,7 @@ function Mission() {
         <Slider {...settings}>
           {missionSlider.map((mission) => {
             return (
-              <div className="px-3 outline-none" key={mission.id}>
+              <div className="px-1 outline-none md:px-3" key={mission.id}>
                 <Image
                   width={420}
                   height={242}

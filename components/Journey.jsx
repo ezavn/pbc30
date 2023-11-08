@@ -11,7 +11,7 @@ function Journey() {
     arrows: false,
     infinite: true,
     autoplay: true,
-    speed: 5000,
+    speed: 500,
     autoplaySpeed: 3000,
     cssEase: "linear",
     pauseOnHover: true,
