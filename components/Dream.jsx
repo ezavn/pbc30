@@ -41,14 +41,24 @@ function Dream() {
   return (
     <div className="py-sectionMB md:py-section bg-[#141159]">
       <div className="page-container max-w-[1565px] px-[15px] relative">
-        <p className="md:py-5 lg:py-24 text-base md:text-2xl lg:text-3xl text-center text-orange leading-[1.6]">
-          <span className="font-bold uppercase">Giấc mơ</span> luôn là động cơ &
-          nguồn cảm hứng mạnh mẽ đằng sau sự thành công của mỗi doanh nghiệp.{" "}
-          <br className="hidden lg:block" /> Nó như nguồn năng lượng vô tận, một
-          chiếc la bàn dẫn lối cho doanh nghiệp tiến lên phía trước,
-          <br className="hidden lg:block" /> cả trong những thời khắc khó khăn
-          như hiện nay!
-        </p>
+        <div className="relative">
+          <p className="md:py-5 lg:py-24 text-base md:text-2xl lg:text-3xl text-center text-orange leading-[1.6]">
+            <span className="font-bold uppercase">Giấc mơ</span> luôn là động cơ
+            & nguồn cảm hứng mạnh mẽ đằng sau sự thành công của mỗi doanh
+            nghiệp. <br className="hidden lg:block" /> Nó như nguồn năng lượng
+            vô tận, một chiếc la bàn dẫn lối cho doanh nghiệp tiến lên phía
+            trước,
+            <br className="hidden lg:block" /> cả trong những thời khắc khó khăn
+            như hiện nay!
+          </p>
+          <Image
+            className="w-[70px] md:w-[120px] lg:w-[180px] absolute top-[20px] left-[10px] md:top-[45px] md:left-0 lg:top-[125px] lg:left-[100px]"
+            width={187}
+            height={26}
+            src="/icons/line1.svg"
+            alt=""
+          />
+        </div>
         <Image
           className="w-[200px] md:w-[300px] lg:w-[498px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
           width={498}
@@ -109,13 +119,26 @@ function Dream() {
         </div>
       </div>
       <BlockContent>
-        <p>
-          Những câu chuyện này chứng minh rằng{" "}
-          <span className="text-2xl lg:text-4xl">giấc mơ không giới hạn.</span>{" "}
-          <br className="hidden lg:block" /> Dù bạn là một doanh nhân SMEs hay
-          một tập đoàn đa quốc gia, giấc mơ có khả năng biến những ý tưởng tưởng{" "}
-          <br className="hidden lg:block" /> chừng không thể thành hiện thực.
-        </p>
+        <div className="relative">
+          <p className="relative z-10">
+            Những câu chuyện này chứng minh rằng{" "}
+            <br className="md:hidden block" />
+            <span className="text-2xl lg:text-4xl">
+              giấc mơ không giới hạn.
+            </span>{" "}
+            <br className="hidden lg:block" /> Dù bạn là một doanh nhân SMEs hay
+            một tập đoàn đa quốc gia, giấc mơ có khả năng biến những ý tưởng
+            tưởng <br className="hidden lg:block" /> chừng không thể thành hiện
+            thực.
+          </p>
+          <Image
+            className="w-[250px] lg:w-[360px] absolute z-0 top-[48px] left-0 md:top-[18px] md:left-[295px] lg:top-[20px] lg:left-[390px]"
+            width={460}
+            height={26}
+            src="/icons/line2.svg"
+            alt=""
+          />
+        </div>
       </BlockContent>
     </div>
   );
