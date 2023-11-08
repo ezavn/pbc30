@@ -20,7 +20,7 @@ function Process() {
             alt=""
           />
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-5 md:gap-x-24 lg:gap-x-28 gap-y-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-5 md:gap-x-24 lg:gap-x-14 gap-y-8">
           <ProcessItem img="/images/process1.svg" width={239} height={179}>
             Đánh giá <span className="text-orange">HIỆN TRẠNG</span> <br />
             của Doanh nghiệp
@@ -42,14 +42,18 @@ function Process() {
             <br />
             <span className="text-orange">CHIẾN LƯỢC</span>
           </ProcessItem>
+          <ProcessItem img="/images/process5.png" width={110} height={161}>
+            Lập
+            <br /> <span className="text-orange">KẾ HOẠCH</span>
+          </ProcessItem>
           <ProcessItem
-            img="/images/process5.svg"
+            img="/images/process6.svg"
             width={139}
             height={178}
             noArrow
           >
-            <span className="text-orange">Lập KẾ HOẠCH</span> &<br />
-            <span className="text-orange">THỰC THI</span> kế hoạch
+            <span className="text-orange">THỰC THI</span> <br />
+            kế hoạch
           </ProcessItem>
         </div>
       </div>
@@ -68,7 +72,7 @@ const ProcessItem = ({ img, children, width, height, noArrow }) => {
       </p>
       {!noArrow && (
         <Image
-          className="w-[62px] lg:w-[82px] md:block hidden absolute bottom-[12px] -right-[80px] lg:-right-[95px]"
+          className="w-[60px] md:block hidden absolute bottom-[12px] -right-[80px] lg:-right-[60px]"
           width={82}
           height={77}
           src="/icons/arrow-stroke-icon.svg"
