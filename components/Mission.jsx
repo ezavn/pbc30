@@ -133,13 +133,13 @@ function Mission() {
                 className="flex items-start gap-5 mb-5 md:mb-7"
               >
                 <Image
-                  className="mt-[7px] w-6 md:w-8 lg:w-[53px]"
+                  className="mt-[7px] w-6 md:w-8 lg:w-[30px]"
                   width={53}
                   height={37}
                   src={item.icon}
                   alt=""
                 />
-                <span className="text-lg font-bold text-white md:text-xl lg:text-3xl">
+                <span className="text-lg font-bold text-white md:text-xl">
                   {item.content}
                 </span>
               </div>

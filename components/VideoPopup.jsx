@@ -12,8 +12,8 @@ export default function VideoPopup() {
             <div className="wrapper">
               <div className="frame">
                 <iframe
-                  src="https://www.youtube.com/embed/kNh8fgnV1Pg"
-                  title="Giới thiệu PLANNING BOOTCAMP 29"
+                  src="https://www.youtube.com/embed/oDRuuFqZ6cQ"
+                  title="Hành trình 7 năm - 29 kỳ Planning Bootcamp - Lập kế hoạch Hành động &amp; Phát triển bản thân"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                   allowfullscreen

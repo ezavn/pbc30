@@ -117,16 +117,24 @@ function RegisterPopup() {
   return (
     <>
       {showRegister ? (
-        <div className="fixed inset-0 z-[99999] bg-[url('/images/active-bg.png')] bg-center bg-cover overflow-y-auto py-28 lg:py-14">
+        <div className="fixed inset-0 z-[99999] bg-[url('/images/active-bg.png')] bg-center bg-cover py-28 lg:py-14">
           <div className="relative page-container max-w-[768px] flex items-center justify-center flex-col">
             <FaTimesCircle
               onClick={() => setShowRegister(false)}
-              className="absolute top-0 cursor-pointer -top-12 md:-top-8 right-8"
+              className="absolute cursor-pointer -top-12 md:-top-8 right-8"
               size={40}
               color="white"
             ></FaTimesCircle>
             <div className="relative">
               <Image
+                className="hidden md:block"
+                width={635}
+                height={595}
+                alt=""
+                src="/images/register-bg2.png"
+              />
+              <Image
+                className="block md:hidden"
                 width={635}
                 height={776}
                 alt=""
@@ -139,7 +147,7 @@ function RegisterPopup() {
                 <div className="flex flex-col gap-y-[9px] w-[88%]">
                   <div>
                     <input
-                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-base md:text-xl outline-none w-full placeholder:text-base md:placeholder:text-xl placeholder:text-white h-[50px] md:h-[82px]"
+                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-base md:text-xl outline-none w-full placeholder:text-base md:placeholder:text-xl placeholder:text-white h-[50px] md:h-[60px]"
                       type="text"
                       id="name"
                       name="name"
@@ -151,7 +159,7 @@ function RegisterPopup() {
                   </div>
                   <div>
                     <input
-                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-base md:text-xl outline-none w-full placeholder:text-base md:placeholder:text-xl placeholder:text-white h-[50px] md:h-[82px]"
+                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-base md:text-xl outline-none w-full placeholder:text-base md:placeholder:text-xl placeholder:text-white h-[50px] md:h-[60px]"
                       id="email"
                       name="email"
                       placeholder="Email"
@@ -163,7 +171,7 @@ function RegisterPopup() {
                   </div>
                   <div>
                     <input
-                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-base md:text-xl outline-none w-full placeholder:text-base md:placeholder:text-xl placeholder:text-white h-[50px] md:h-[82px]"
+                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-base md:text-xl outline-none w-full placeholder:text-base md:placeholder:text-xl placeholder:text-white h-[50px] md:h-[60px]"
                       id="phone"
                       name="phone"
                       placeholder="Số điện thoại"
@@ -175,7 +183,7 @@ function RegisterPopup() {
                   </div>
                   <div>
                     <input
-                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-base md:text-xl outline-none w-full placeholder:text-base md:placeholder:text-xl placeholder:text-white h-[50px] md:h-[82px]"
+                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-base md:text-xl outline-none w-full placeholder:text-base md:placeholder:text-xl placeholder:text-white h-[50px] md:h-[60px]"
                       id="company"
                       name="company"
                       placeholder="Tên doanh nghiệp"
@@ -186,7 +194,7 @@ function RegisterPopup() {
                   </div>
                   <div>
                     <select
-                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-[16px] md:text-xl outline-none w-full h-[50px] md:h-[82px]"
+                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-[16px] md:text-xl outline-none w-full h-[50px] md:h-[60px]"
                       id="product"
                       name="product"
                       onChange={handleChange}
@@ -205,7 +213,7 @@ function RegisterPopup() {
                   </div>
                 </div>
                 <button
-                  className="absolute -bottom-[70px] left-[12%] md:-bottom-[160px] md:left-[23%]"
+                  className="absolute -bottom-[70px] left-[12%] md:-bottom-[110px] md:left-[23%]"
                   type="submit"
                   disabled={loading}
                 >
