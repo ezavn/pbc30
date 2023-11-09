@@ -19,7 +19,7 @@ function About() {
       >
         <motion.div
           variants={fadeIn("down", "tween", 0.2, 2)}
-          className="relative flex-1 w-full"
+          className="relative flex-1 hidden w-full md:block"
         >
           <Image
             width={619}
@@ -38,6 +38,24 @@ function About() {
             />
           </span>
         </motion.div>
+        <div className="relative flex-1 block w-full md:hidden">
+          <Image
+            width={619}
+            height={468}
+            className="object-cover w-full h-full rounded-xl"
+            src="/images/about-bg.png"
+            alt="about"
+          />
+          <span className="cursor-pointer inline-flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+            <Image
+              width={130}
+              height={130}
+              onClick={() => setShowPopup(true)}
+              src="/icons/player-icon.svg"
+              alt="player"
+            />
+          </span>
+        </div>
         <motion.div
           variants={fadeIn("down", "tween", 0.2, 2)}
           className="flex-col flex-1 font-semibold text-justify text-black lg:flex-row md:text-left"

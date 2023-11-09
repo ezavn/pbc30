@@ -134,7 +134,7 @@ function RegisterPopup() {
                 src="/images/register-bg2.png"
               />
               <Image
-                className="block md:hidden"
+                className="block md:hidden h-[430px]"
                 width={635}
                 height={776}
                 alt=""
@@ -142,12 +142,12 @@ function RegisterPopup() {
               />
               <form
                 onSubmit={handleSubmit}
-                className="absolute top-[100px] md:top-[183px] right-0 left-7"
+                className="absolute top-[125px] md:top-[183px] right-0 left-7"
               >
                 <div className="flex flex-col gap-y-[9px] w-[88%]">
                   <div>
                     <input
-                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-base md:text-xl outline-none w-full placeholder:text-base md:placeholder:text-xl placeholder:text-white h-[50px] md:h-[60px]"
+                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-base md:text-xl outline-none w-full placeholder:text-base md:placeholder:text-xl placeholder:text-white h-[45px] md:h-[60px]"
                       type="text"
                       id="name"
                       name="name"
@@ -159,7 +159,7 @@ function RegisterPopup() {
                   </div>
                   <div>
                     <input
-                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-base md:text-xl outline-none w-full placeholder:text-base md:placeholder:text-xl placeholder:text-white h-[50px] md:h-[60px]"
+                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-base md:text-xl outline-none w-full placeholder:text-base md:placeholder:text-xl placeholder:text-white h-[45px] md:h-[60px]"
                       id="email"
                       name="email"
                       placeholder="Email"
@@ -171,7 +171,7 @@ function RegisterPopup() {
                   </div>
                   <div>
                     <input
-                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-base md:text-xl outline-none w-full placeholder:text-base md:placeholder:text-xl placeholder:text-white h-[50px] md:h-[60px]"
+                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-base md:text-xl outline-none w-full placeholder:text-base md:placeholder:text-xl placeholder:text-white h-[45px] md:h-[60px]"
                       id="phone"
                       name="phone"
                       placeholder="Số điện thoại"
@@ -183,7 +183,7 @@ function RegisterPopup() {
                   </div>
                   <div>
                     <input
-                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-base md:text-xl outline-none w-full placeholder:text-base md:placeholder:text-xl placeholder:text-white h-[50px] md:h-[60px]"
+                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-base md:text-xl outline-none w-full placeholder:text-base md:placeholder:text-xl placeholder:text-white h-[45px] md:h-[60px]"
                       id="company"
                       name="company"
                       placeholder="Tên doanh nghiệp"
@@ -194,7 +194,7 @@ function RegisterPopup() {
                   </div>
                   <div>
                     <select
-                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-[16px] md:text-xl outline-none w-full h-[50px] md:h-[60px]"
+                      className="px-5 md:px-[32px] rounded-[6px] bg-[#3F4274] text-white text-[16px] md:text-xl outline-none w-full h-[45px] md:h-[60px]"
                       id="product"
                       name="product"
                       onChange={handleChange}
