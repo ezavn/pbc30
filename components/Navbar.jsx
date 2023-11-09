@@ -71,13 +71,13 @@ const Navbar = ({ isActive }) => {
             isActive ? "text-white font-semibold" : "text-blue font-bold"
           } lg:flex hidden items-center gap-3 xl:gap-10 font-sans uppercase text-center`}
         >
-          <Link href="#">Lợi ích</Link>
-          <Link href="#">
+          <Link href="#benefit">Lợi ích</Link>
+          <Link href="#active">
             HOẠT ĐỘNG <br />
             NỔI BẬT
           </Link>
-          <Link href="#">DIỄN GIẢ</Link>
-          <Link href="#">
+          <Link href="#coach">DIỄN GIẢ</Link>
+          <Link href="#mission">
             NỘI DUNG <br />
             CHƯƠNG TRÌNH
           </Link>
@@ -131,7 +131,11 @@ const Navbar = ({ isActive }) => {
               >
                 {navLinks.map((link) => {
                   return (
-                    <div className="overflow-hidden" key={link.id}>
+                    <div
+                      onClick={() => setOpen(false)}
+                      className="overflow-hidden"
+                      key={link.id}
+                    >
                       <MobileNavLink
                         key={link.id}
                         title={link.name}

@@ -4,6 +4,8 @@ import React from "react";
 import { journeyData } from "@/data";
 import BlockContent from "./BlockContent";
 import Slider from "react-slick";
+import { motion } from "framer-motion";
+import { fadeIn, staggerContainer } from "@/variants";
 
 function Journey() {
   var settings = {
@@ -44,18 +46,26 @@ function Journey() {
   };
   return (
     <section className="relative bg-[#0D0C30] pt-10 lg:pt-2">
-      <div className="page-container max-w-[1670px] mb-10">
-        <p className="text-base text-center text-white md:text-lg lg:text-xl">
-          "Đã mơ thì mơ hẳn tới những vì sao, nhưng hãy để đôi chân trụ vững
-          dưới mặt đất"
-        </p>
-        <Image
-          className="mt-2 lg:mt-4 lg:ml-[220px] mb-10 lg:mb-16"
-          width={1055}
-          height={113}
-          src="/images/heading-4.svg"
-          alt=""
-        />
+      <motion.div
+        variants={staggerContainer(0.3, 1)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.6 }}
+        className="page-container max-w-[1670px] mb-10"
+      >
+        <motion.div variants={fadeIn("down", "tween", 0.2, 1.1)}>
+          <p className="text-base text-center text-white md:text-lg lg:text-xl">
+            "Đã mơ thì mơ hẳn tới những vì sao, nhưng hãy để đôi chân trụ vững
+            dưới mặt đất"
+          </p>
+          <Image
+            className="mt-2 lg:mt-4 lg:ml-[220px] mb-10 lg:mb-16"
+            width={1055}
+            height={113}
+            src="/images/heading-4.svg"
+            alt=""
+          />
+        </motion.div>
         <div className="relative hidden mx-5 w-fit lg:block">
           <div className="absolute top-10 w-full h-[2px] bg-blue"></div>
           <div className="relative z-10 flex">
@@ -105,14 +115,20 @@ function Journey() {
             })}
           </Slider>
         </div>
-      </div>
-      <BlockContent>
-        Hãy đến với PBC 30 và tham gia cùng chúng tôi trong hành trình xây dựng
-        Giấc Mơ của bạn và biến nó <br className="hidden lg:block" /> thành hiện
-        thực. Hãy dám nghĩ lớn, hãy dám mơ to, vì chỉ khi bạn tin vào khả năng
-        của mình, bạn mới có <br className="hidden lg:block" /> thể làm nên điều
-        lớn lao và thay đổi thế giới.
-      </BlockContent>
+      </motion.div>
+      <motion.div
+        variants={fadeIn("right", "tween", 0.2, 1.1)}
+        initial="hidden"
+        whileInView={"show"}
+      >
+        <BlockContent>
+          Hãy đến với PBC 30 và tham gia cùng chúng tôi trong hành trình xây
+          dựng Giấc Mơ của bạn và biến nó <br className="hidden lg:block" />{" "}
+          thành hiện thực. Hãy dám nghĩ lớn, hãy dám mơ to, vì chỉ khi bạn tin
+          vào khả năng của mình, bạn mới có <br className="hidden lg:block" />{" "}
+          thể làm nên điều lớn lao và thay đổi thế giới.
+        </BlockContent>
+      </motion.div>
     </section>
   );
 }

@@ -1,18 +1,32 @@
 import { usePopup } from "@/context/popupContext";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn, staggerContainer } from "@/variants";
 
 function Place() {
   const { setShowRegister } = usePopup();
   return (
     <section className="bg-[url('/images/place-bg.png')] py-sectionMB md:py-section bg-right lg:bg-center bg-cover">
-      <div className="page-container max-w-[1024px] flex justify-center items-center flex-col lg:pl-52">
-        <h2 className="text-3xl font-black text-white md:mb-2 md:text-5xl lg:text-7xl">
+      <motion.div
+        variants={staggerContainer(0.3, 1)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.6 }}
+        className="page-container max-w-[1024px] flex justify-center items-center flex-col lg:pl-52"
+      >
+        <motion.h2
+          variants={fadeIn("down", "tween", 0.2, 1.1)}
+          className="text-3xl font-black text-white md:mb-2 md:text-5xl lg:text-7xl"
+        >
           LẦN ĐẦU TIÊN
-        </h2>
-        <h3 className="mb-2 text-lg font-black text-white uppercase md:mb-4 md:text-3xl lg:text-4xl">
+        </motion.h2>
+        <motion.h3
+          variants={fadeIn("down", "tween", 0.2, 1.1)}
+          className="mb-2 text-lg font-black text-white uppercase md:mb-4 md:text-3xl lg:text-4xl"
+        >
           ĐƯỢC TỔ CHỨC tại
-        </h3>
+        </motion.h3>
         <div className="relative mb-40">
           <Image
             width={900}
@@ -34,7 +48,7 @@ function Place() {
             ĐĂNG KÝ NGAY
           </button>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

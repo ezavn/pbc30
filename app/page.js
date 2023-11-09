@@ -41,7 +41,7 @@ export default function Home() {
           <Loader setLoading={setLoading} />
         </motion.div>
       ) : (
-        <>
+        <div className="overflow-x-hidden">
           <PopupProvider>
             <Header />
             <Hero />
@@ -63,7 +63,7 @@ export default function Home() {
             <Footer />
             <ScrollToTopButton />
           </PopupProvider>
-        </>
+        </div>
       )}
     </AnimatePresence>
   );

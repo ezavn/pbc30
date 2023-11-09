@@ -2,6 +2,8 @@ import React from "react";
 import { missionSlider, missionData } from "@/data";
 import Slider from "react-slick";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { fadeIn, staggerContainer } from "@/variants";
 
 function Mission() {
   var settings = {
@@ -40,9 +42,18 @@ function Mission() {
     ],
   };
   return (
-    <section className="bg-darkBlue py-sectionMB md:py-section">
-      <div className="page-container flex flex-col lg:flex-row items-center justify-between max-w-[1098px]">
-        <div className="flex flex-col items-center justify-center flex-1">
+    <section id="mission" className="bg-darkBlue py-sectionMB md:py-section">
+      <motion.div
+        variants={staggerContainer(0.3, 1)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.6 }}
+        className="page-container flex flex-col lg:flex-row items-center justify-between max-w-[1098px]"
+      >
+        <motion.div
+          variants={fadeIn("right", "tween", 0.2, 1.1)}
+          className="flex flex-col items-center justify-center flex-1"
+        >
           <div className="relative mb-6 lg:mb-8 w-fit">
             <p className="text-gra text-[120px] md:text-[200px] font-extrabold w-fit leading-[1]">
               29
@@ -62,8 +73,11 @@ function Mission() {
             PLANNING BOOTCAMP{" "}
             <span className="block text-orange">TỔ CHỨC THÀNH CÔNG</span>
           </p>
-        </div>
-        <div className="flex flex-col items-center justify-center flex-1">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("left", "tween", 0.2, 1.1)}
+          className="flex flex-col items-center justify-center flex-1"
+        >
           <div className="relative mb-6 lg:mb-8 w-fit">
             <p className="text-gra text-[120px] md:text-[200px] font-extrabold w-fit leading-[1]">
               4000
@@ -83,9 +97,9 @@ function Mission() {
             CHỦ DOANH NGHIỆP & ĐỘI NGŨ NHÂN VIÊN
             <span className="text-orange"> THAM GIA</span>
           </p>
-        </div>
+        </motion.div>
         <div></div>
-      </div>
+      </motion.div>
       <div className="my-8 md:my-16 mission-slider">
         <Slider {...settings}>
           {missionSlider.map((mission) => {
@@ -102,8 +116,17 @@ function Mission() {
           })}
         </Slider>
       </div>
-      <div className="page-container max-w-[1636px] flex flex-col lg:flex-row gap-8 lg:gap-5">
-        <div className="relative flex-1">
+      <motion.div
+        variants={staggerContainer(0.3, 1)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.6 }}
+        className="page-container max-w-[1636px] flex flex-col lg:flex-row gap-8 lg:gap-5"
+      >
+        <motion.div
+          variants={fadeIn("right", "tween", 0.2, 1.5)}
+          className="relative flex-1"
+        >
           <Image
             width={1039}
             height={312}
@@ -124,11 +147,12 @@ function Mission() {
             src="/icons/star3.svg"
             alt=""
           />
-        </div>
+        </motion.div>
         <div className="w-full lg:max-w-[600px] flex-shrink-0">
-          {missionData.map((item) => {
+          {missionData.map((item, index) => {
             return (
-              <div
+              <motion.div
+                variants={fadeIn("up", "tween", 0.4 + index / 5, 1.6)}
                 key={item.id}
                 className="flex items-start gap-5 mb-5 md:mb-7"
               >
@@ -142,11 +166,11 @@ function Mission() {
                 <span className="text-lg font-bold text-white md:text-xl">
                   {item.content}
                 </span>
-              </div>
+              </motion.div>
             );
           })}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

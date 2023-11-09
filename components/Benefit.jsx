@@ -4,7 +4,10 @@ import { benefitData } from "@/data";
 
 function Benefit() {
   return (
-    <section className="pb-20 bg-darkBlue pt-sectionMB md:pt-section md:pb-28">
+    <section
+      id="benefit"
+      className="pb-20 bg-darkBlue pt-sectionMB md:pt-section md:pb-28"
+    >
       <div className="page-container max-w-[1095px] flex flex-col items-center justify-center">
         <div className="flex flex-col items-center justify-center">
           <Image width={729} height={115} src="/images/heading-5.svg" alt="" />

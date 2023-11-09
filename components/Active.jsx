@@ -4,7 +4,10 @@ import React from "react";
 
 function Active() {
   return (
-    <section className="relative md:py-section py-sectionMB bg-[url('/images/active-bg.png')]">
+    <section
+      id="active"
+      className="relative md:py-section py-sectionMB bg-[url('/images/active-bg.png')]"
+    >
       <div className="page-container max-w-[1304px]">
         <div className="flex flex-col items-center justify-center">
           <Image

@@ -2,7 +2,7 @@ export const navLinks = [
   { id: 1, href: "#benefit", name: "lợi ích" },
   { id: 2, href: "#active", name: "hoạt động nổi bật" },
   { id: 3, href: "#coach", name: "diễn giả" },
-  { id: 4, href: "#content", name: "nội dung chương trình" },
+  { id: 4, href: "#mission", name: "nội dung chương trình" },
   {
     id: 5,
     href: "https://actioncoachcbd.com/",

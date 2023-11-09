@@ -41,7 +41,7 @@ function Coach() {
     ],
   };
   return (
-    <section className="bg-darkBlue md:py-section py-sectionMB">
+    <section id="coach" className="bg-darkBlue md:py-section py-sectionMB">
       <div className="page-container max-w-[1375px]">
         <div className="flex flex-col items-center justify-center">
           <h3 className="mt-3 text-xl font-bold text-white">
