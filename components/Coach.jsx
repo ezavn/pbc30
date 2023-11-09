@@ -2,6 +2,8 @@ import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
 import { coachData } from "@/data";
+import { motion } from "framer-motion";
+import { fadeIn, staggerContainer } from "@/variants";
 
 function Coach() {
   var settings = {
@@ -42,17 +44,27 @@ function Coach() {
   };
   return (
     <section id="coach" className="bg-darkBlue md:py-section py-sectionMB">
-      <div className="page-container max-w-[1375px]">
+      <motion.div
+        variants={staggerContainer(0.3, 1)}
+        initial="hidden"
+        whileInView={"show"}
+        className="page-container max-w-[1375px]"
+      >
         <div className="flex flex-col items-center justify-center">
-          <h3 className="mt-3 text-xl font-bold text-white">
+          <motion.h3
+            variants={fadeIn("down", "tween", 0.4, 1.1)}
+            className="mt-3 text-xl font-bold text-white"
+          >
             Với sự tham gia của
-          </h3>
-          <Image
-            width={1293}
-            height={153}
-            src="/images/coach-heading.svg"
-            alt=""
-          />
+          </motion.h3>
+          <motion.div variants={fadeIn("down", "tween", 0.2, 1.1)}>
+            <Image
+              width={1293}
+              height={153}
+              src="/images/coach-heading.svg"
+              alt=""
+            />
+          </motion.div>
           <Image
             className="mt-2 star-light mix-blend-screen"
             width={924}
@@ -83,7 +95,7 @@ function Coach() {
             })}
           </Slider>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

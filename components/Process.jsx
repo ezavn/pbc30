@@ -1,17 +1,26 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn, staggerContainer } from "@/variants";
 
 function Process() {
   return (
     <section className="bg-[#141159] md:py-section py-sectionMB overflow-x-hidden">
-      <div className="page-container max-w-[1485px] flex flex-col items-center justify-center">
+      <motion.div
+        variants={staggerContainer(0.3, 1)}
+        initial="hidden"
+        whileInView={"show"}
+        className="page-container max-w-[1485px] flex flex-col items-center justify-center"
+      >
         <div className="flex flex-col items-center justify-center">
-          <Image
-            width={722}
-            height={187}
-            src="/images/process-heading.svg"
-            alt=""
-          />
+          <motion.div variants={fadeIn("down", "tween", 0.2, 1.1)}>
+            <Image
+              width={722}
+              height={187}
+              src="/images/process-heading.svg"
+              alt=""
+            />
+          </motion.div>
           <Image
             className="mt-2 star-light md:mt-5 mix-blend-screen"
             width={924}
@@ -56,7 +65,7 @@ function Process() {
             kế hoạch
           </ProcessItem>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
@@ -64,12 +73,27 @@ function Process() {
 const ProcessItem = ({ img, children, width, height, noArrow }) => {
   return (
     <div className="relative flex flex-col items-center">
-      <div className="h-[180px]">
+      <motion.div
+        initial={{ scale: 0.5 }}
+        whileInView={{
+          scale: 1,
+          transition: {
+            duration: 0.7,
+            ease: [0.12, 0, 0.39, 0],
+          },
+        }}
+        className="h-[180px]"
+      >
         <Image width={width} height={height} src={img} alt="" />
-      </div>
-      <p className="text-sm font-bold text-white md:text-base lg:text-lg">
+      </motion.div>
+      <motion.p
+        variants={fadeIn("down", "tween", 0.2, 1)}
+        initial="hidden"
+        whileInView={"show"}
+        className="text-sm font-bold text-white md:text-base lg:text-lg"
+      >
         {children}
-      </p>
+      </motion.p>
       {!noArrow && (
         <Image
           className="w-[60px] md:block hidden absolute bottom-[12px] -right-[80px] lg:-right-[60px]"

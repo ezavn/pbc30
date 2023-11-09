@@ -3,6 +3,8 @@ import React from "react";
 import { tickets } from "@/data";
 import Slider from "react-slick";
 import { usePopup } from "@/context/popupContext";
+import { motion } from "framer-motion";
+import { fadeIn, staggerContainer } from "@/variants";
 
 function Ticket() {
   const { setShowRegister } = usePopup();
@@ -43,25 +45,40 @@ function Ticket() {
   };
   return (
     <section className="pb-9 bg-darkBlue md:pt-section pt-sectionMB">
-      <div className="page-container max-w-[1010px]">
+      <motion.div
+        variants={staggerContainer(0.3, 1)}
+        initial="hidden"
+        whileInView={"show"}
+        className="page-container max-w-[1010px]"
+      >
         <div className="flex flex-col items-center justify-center mb-10 md:mb-16">
-          <Image
-            width={670}
-            height={114}
-            src="/images/ticket-heading.svg"
-            alt=""
-          />
+          <motion.div variants={fadeIn("down", "tween", 0.4, 1.1)}>
+            <Image
+              width={670}
+              height={114}
+              src="/images/ticket-heading.svg"
+              alt=""
+            />
+          </motion.div>
         </div>
         <div className="hidden gap-3 md:grid md:grid-cols-3 md:gap-8">
           {tickets.map((item) => {
             return (
-              <Image
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                  transition: {
+                    delay: 0.4,
+                    duration: 1,
+                    ease: [0.12, 0, 0.39, 0],
+                  },
+                }}
                 key={item.id}
-                width={316}
-                height={360}
-                src={item.image}
-                alt=""
-              />
+              >
+                <Image width={316} height={360} src={item.image} alt="" />
+              </motion.div>
             );
           })}
         </div>
@@ -84,7 +101,7 @@ function Ticket() {
         <div className="flex items-center justify-center mt-6 md:mt-10">
           <button
             onClick={() => setShowRegister(true)}
-            className="font-bold text-white capitalize w-[220px] h-[44px] px-[16px] flex items-center justify-center cursor-pointer rounded-[46px] bg-gradient-to-r from-[#FF1F4C] to-[#FF5E35]"
+            className="pulse-btn font-bold text-white capitalize w-[220px] h-[44px] px-[16px] flex items-center justify-center cursor-pointer rounded-[46px] bg-gradient-to-r from-[#FF1F4C] to-[#FF5E35]"
           >
             ĐĂNG KÝ NGAY
           </button>
@@ -131,7 +148,7 @@ function Ticket() {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

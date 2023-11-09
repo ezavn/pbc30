@@ -43,7 +43,7 @@ function Place() {
           />
           <button
             onClick={() => setShowRegister(true)}
-            className="absolute -bottom-14 md:bottom-0 right-20 md:right-[275px] font-bold text-white capitalize w-[220px] h-[44px] px-[16px] flex items-center justify-center cursor-pointer rounded-[46px] bg-gradient-to-r from-[#FF1F4C] to-[#FF5E35]"
+            className="pulse-btn absolute -bottom-14 md:bottom-0 right-20 md:right-[275px] font-bold text-white capitalize w-[220px] h-[44px] px-[16px] flex items-center justify-center cursor-pointer rounded-[46px] bg-gradient-to-r from-[#FF1F4C] to-[#FF5E35]"
           >
             ĐĂNG KÝ NGAY
           </button>

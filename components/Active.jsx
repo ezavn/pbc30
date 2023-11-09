@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn, staggerContainer } from "@/variants";
 
 function Active() {
   return (
@@ -8,15 +10,27 @@ function Active() {
       id="active"
       className="relative md:py-section py-sectionMB bg-[url('/images/active-bg.png')]"
     >
-      <div className="page-container max-w-[1304px]">
+      <motion.div
+        variants={staggerContainer(0.3, 1)}
+        initial="hidden"
+        whileInView={"show"}
+        className="page-container max-w-[1304px]"
+      >
         <div className="flex flex-col items-center justify-center">
-          <Image
-            width={729}
-            height={115}
-            src="/images/active-heading.svg"
-            alt=""
-          />
-          <h3 className="mt-3 text-xl font-bold text-white">có những gì?</h3>
+          <motion.div variants={fadeIn("down", "tween", 0.4, 1.1)}>
+            <Image
+              width={729}
+              height={115}
+              src="/images/active-heading.svg"
+              alt=""
+            />
+          </motion.div>
+          <motion.h3
+            variants={fadeIn("down", "tween", 0.2, 1.1)}
+            className="mt-3 text-xl font-bold text-white pulse3"
+          >
+            có những gì?
+          </motion.h3>
           <Image
             className="mt-2 star-light mix-blend-screen"
             width={924}
@@ -30,29 +44,35 @@ function Active() {
             Hoạt động <br /> Buổi sáng ngoài trời
           </ActiveItem>
           <ActiveItem
+            direction="left"
             img="/images/active2.png"
             desc="RoundTable là phần chia sẻ mang tính chuyên sâu, thực chiến của các Nhà Huấn luyện Doanh nghiệp của CBD Firm và các Chủ doanh nghiệp đang là khách hàng của CBD Firm về các vấn đề mà nhiều Doanh nghiệp đang phải đối mặt."
           >
             Roundtable
           </ActiveItem>
-          <ActiveItem active img="/images/active3.png">
+          <ActiveItem direction="left" active img="/images/active3.png">
             Chuyên đề <br />
-            <span className="block mb-3 text-orange">"Get A Big Dream"</span>
+            <span className="block mb-3 text-orange pulse1">
+              "Get A Big Dream"
+            </span>
             Giúp Chủ doanh nghiệp xây dựng GIẤC MƠ LỚN và biến nó thành hiện
             thực.
           </ActiveItem>
-          <ActiveItem img="/images/active4.png">
+          <ActiveItem direction="right" img="/images/active4.png">
             Gala mừng chiến thắng vượt qua năm 2023 cùng nhau
           </ActiveItem>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
 
-const ActiveItem = ({ children, desc, img, active }) => {
+const ActiveItem = ({ children, desc, img, active, direction = "right" }) => {
   return (
-    <div
+    <motion.div
+      variants={fadeIn(direction, "tween", 0.4, 1.6)}
+      initial="hidden"
+      whileInView={"show"}
       className={`${
         active ? "border-[#BE8D3B]" : "border-white"
       } border-[2px] border-solid justify-between rounded-[20px] flex flex-col-reverse md:flex-row items-start py-5 px-6 gap-4 md:gap-12 flex-1`}
@@ -70,7 +90,7 @@ const ActiveItem = ({ children, desc, img, active }) => {
           alt=""
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

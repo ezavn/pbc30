@@ -2,6 +2,8 @@ import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
 import { testiData } from "@/data";
+import { motion } from "framer-motion";
+import { fadeIn, staggerContainer } from "@/variants";
 
 function Testi() {
   const settings = {
@@ -41,14 +43,21 @@ function Testi() {
   };
   return (
     <section className="pt-10 pb-3 md:py-10 bg-darkBlue">
-      <div className="page-container max-w-[1300px]">
+      <motion.div
+        variants={staggerContainer(0.3, 1)}
+        initial="hidden"
+        whileInView={"show"}
+        className="page-container max-w-[1300px]"
+      >
         <div className="flex flex-col items-center justify-center">
-          <Image
-            width={927}
-            height={188}
-            src="/images/testi-heading.svg"
-            alt=""
-          />
+          <motion.div variants={fadeIn("down", "tween", 0.2, 1.1)}>
+            <Image
+              width={927}
+              height={188}
+              src="/images/testi-heading.svg"
+              alt=""
+            />
+          </motion.div>
           <Image
             className="mt-2 star-light md:mt-5 mix-blend-screen"
             width={924}
@@ -108,20 +117,30 @@ function Testi() {
                         src="/icons/quote-icon2.svg"
                       />
                     </div>
-                    <p className="mb-5 text-justify leading-[1.6]">
+                    <motion.p
+                      variants={fadeIn("down", "tween", 0.2, 1.1)}
+                      initial="hidden"
+                      whileInView={"show"}
+                      className="mb-5 text-justify leading-[1.6]"
+                    >
                       {item.desc}
-                    </p>
-                    <div className="relative z-10">
+                    </motion.p>
+                    <motion.div
+                      variants={fadeIn("left", "tween", 0.2, 1.1)}
+                      initial="hidden"
+                      whileInView={"show"}
+                      className="relative z-10"
+                    >
                       <h3 className="font-bold uppercase">{item.name}</h3>
                       <p className="text-sm">{item.company}</p>
-                    </div>
+                    </motion.div>
                   </div>
                 </div>
               );
             })}
           </Slider>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

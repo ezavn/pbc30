@@ -69,7 +69,7 @@ function Journey() {
         <div className="relative hidden mx-5 w-fit lg:block">
           <div className="absolute top-10 w-full h-[2px] bg-blue"></div>
           <div className="relative z-10 flex">
-            {journeyData.map((item) => {
+            {journeyData.map((item, index) => {
               return (
                 <div key={item.id} className="flex items-start flex-1">
                   <div className="w-[72px] flex-shrink-0">
@@ -81,10 +81,15 @@ function Journey() {
                       alt={item.title}
                     />
                   </div>
-                  <div className="flex flex-col flex-1 gap-4 mt-16 text-white">
+                  <motion.div
+                    variants={fadeIn("right", "tween", 0.2 + index / 10, 1.1)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    className="flex flex-col flex-1 gap-4 mt-16 text-white"
+                  >
                     <h4 className="text-xl font-bold">{item.title}</h4>
                     <p className="text-base">{item.desc}</p>
-                  </div>
+                  </motion.div>
                 </div>
               );
             })}
