@@ -368,12 +368,12 @@ export const coachData = [
     name: "RITA Tô Quý Ngọc Châu",
     position: "Busines COACH",
   },
-  {
-    id: 2,
-    image: "/images/coach2.png",
-    name: "LEO Võ Thái Lâm",
-    position: "Busines COACH",
-  },
+  // {
+  //   id: 2,
+  //   image: "/images/coach2.png",
+  //   name: "LEO Võ Thái Lâm",
+  //   position: "Busines COACH",
+  // },
   {
     id: 3,
     image: "/images/coach3.png",
@@ -386,12 +386,12 @@ export const coachData = [
     name: "TONY Thái Sơn",
     position: "Busines COACH",
   },
-  {
-    id: 5,
-    image: "/images/coach5.png",
-    name: "THEO Vũ Bá Thế",
-    position: "Busines COACH",
-  },
+  // {
+  //   id: 5,
+  //   image: "/images/coach5.png",
+  //   name: "THEO Vũ Bá Thế",
+  //   position: "Busines COACH",
+  // },
   {
     id: 6,
     image: "/images/coach6.png",

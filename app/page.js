@@ -23,6 +23,7 @@ import Footer from "@/components/Footer";
 import Collections from "@/components/Collections";
 import Testi from "@/components/Testi";
 import Coach from "@/components/Coach";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -60,6 +61,7 @@ export default function Home() {
             <Collections />
             <RegisterPopup />
             <Footer />
+            <ScrollToTopButton />
           </PopupProvider>
         </>
       )}
