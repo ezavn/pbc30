@@ -17,7 +17,7 @@ $layout-breakpoint-xsmall: 480px;
   }
   body {
     scroll-behavior: smooth;
-    font-family: var(--font-opensans), sans-serif;
+    @apply font-sans;
     font-weight: 400;
   }
 }

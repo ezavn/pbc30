@@ -22,6 +22,7 @@ import RegisterPopup from "@/components/RegisterPopup";
 import Footer from "@/components/Footer";
 import Collections from "@/components/Collections";
 import Testi from "@/components/Testi";
+import Coach from "@/components/Coach";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -53,6 +54,7 @@ export default function Home() {
             <Benefit />
             <Process />
             <Active />
+            <Coach />
             <Testi />
             <Ticket />
             <Collections />

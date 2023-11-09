@@ -360,3 +360,60 @@ export const testiData = [
     avatar: "/images/testi5.png",
   },
 ];
+
+export const coachData = [
+  {
+    id: 1,
+    image: "/images/coach1.png",
+    name: "RITA Tô Quý Ngọc Châu",
+    position: "Busines COACH",
+  },
+  {
+    id: 2,
+    image: "/images/coach2.png",
+    name: "LEO Võ Thái Lâm",
+    position: "Busines COACH",
+  },
+  {
+    id: 3,
+    image: "/images/coach3.png",
+    name: "KAKA Lê Ngọc Đăng",
+    position: "Busines COACH",
+  },
+  {
+    id: 4,
+    image: "/images/coach4.png",
+    name: "TONY Thái Sơn",
+    position: "Busines COACH",
+  },
+  {
+    id: 5,
+    image: "/images/coach5.png",
+    name: "THEO Vũ Bá Thế",
+    position: "Busines COACH",
+  },
+  {
+    id: 6,
+    image: "/images/coach6.png",
+    name: "TAMY Ngọc Thảo",
+    position: "Busines COACH",
+  },
+  {
+    id: 7,
+    image: "/images/coach7.png",
+    name: "EMMY Lê Thị Hải",
+    position: "Busines COACH",
+  },
+  {
+    id: 8,
+    image: "/images/coach8.png",
+    name: "RICHARD Hoàng Văn Tình",
+    position: "Busines COACH",
+  },
+  {
+    id: 9,
+    image: "/images/coach9.png",
+    name: "VOVA Lê Việt Chuẩn",
+    position: "Busines COACH",
+  },
+];
