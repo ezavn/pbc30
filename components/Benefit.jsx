@@ -9,7 +9,7 @@ function Benefit() {
         <div className="flex flex-col items-center justify-center">
           <Image width={729} height={115} src="/images/heading-5.svg" alt="" />
           <Image
-            className="mt-2 md:mt-5 mix-blend-screen"
+            className="mt-2 star1 md:mt-5 mix-blend-screen"
             width={924}
             height={94}
             src="/icons/star6.svg"
@@ -24,7 +24,7 @@ function Benefit() {
                   {item.content}
                 </div>
                 <Image
-                  className="w-[200px] md:w-[311px] mix-blend-screen absolute -bottom-16 md:-bottom-24 left-[50%] translate-x-[-50%]"
+                  className="star3 w-[200px] md:w-[311px] mix-blend-screen absolute -bottom-16 md:-bottom-24 left-[50%] translate-x-[-50%]"
                   width={311}
                   height={242}
                   src="/icons/star7.svg"

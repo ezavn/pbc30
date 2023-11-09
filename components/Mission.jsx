@@ -51,7 +51,7 @@ function Mission() {
               KỲ
             </p>
             <Image
-              className="w-[80px] md:w-[128px] absolute -top-[15px] left-5 md:-top-[30px] md:left-[25px] mix-blend-screen"
+              className="star1 w-[80px] md:w-[128px] absolute -top-[15px] left-5 md:-top-[30px] md:left-[25px] mix-blend-screen"
               width={128}
               height={108}
               src="/icons/star1.svg"
@@ -72,7 +72,7 @@ function Mission() {
               HƠN
             </p>
             <Image
-              className="absolute -left-[70px] -bottom-[5px] md:-left-[120px] md:-bottom-[10px] mix-blend-screen"
+              className="star2 absolute -left-[70px] -bottom-[5px] md:-left-[120px] md:-bottom-[10px] mix-blend-screen"
               width={480}
               height={59}
               src="/icons/star2.svg"
@@ -118,7 +118,7 @@ function Mission() {
             alt=""
           />
           <Image
-            className="mix-blend-screen absolute top-[66px] md:top-[140px] left-[50%] translate-x-[-50%]"
+            className="star1 mix-blend-screen absolute top-[66px] md:top-[140px] left-[50%] translate-x-[-50%]"
             width={900}
             height={132}
             src="/icons/star3.svg"

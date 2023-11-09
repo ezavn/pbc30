@@ -13,7 +13,7 @@ function Process() {
             alt=""
           />
           <Image
-            className="mt-2 md:mt-5 mix-blend-screen"
+            className="mt-2 star1 md:mt-5 mix-blend-screen"
             width={924}
             height={94}
             src="/icons/star6.svg"

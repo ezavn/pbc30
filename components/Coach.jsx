@@ -14,6 +14,7 @@ function Coach() {
     cssEase: "linear",
     slidesToShow: 5,
     slidesToScroll: 1,
+    swipeToSlide: true,
     initialSlide: 0,
     responsive: [
       {
@@ -53,7 +54,7 @@ function Coach() {
             alt=""
           />
           <Image
-            className="mt-2 mix-blend-screen"
+            className="mt-2 star1 mix-blend-screen"
             width={924}
             height={94}
             src="/icons/star6.svg"

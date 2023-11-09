@@ -15,7 +15,7 @@ function Active() {
           />
           <h3 className="mt-3 text-xl font-bold text-white">có những gì?</h3>
           <Image
-            className="mt-2 mix-blend-screen"
+            className="mt-2 star1 mix-blend-screen"
             width={924}
             height={94}
             src="/icons/star6.svg"
