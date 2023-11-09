@@ -54,7 +54,7 @@ function Coach() {
             alt=""
           />
           <Image
-            className="mt-2 star1 mix-blend-screen"
+            className="mt-2 star-light mix-blend-screen"
             width={924}
             height={94}
             src="/icons/star6.svg"

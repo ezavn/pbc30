@@ -35,7 +35,7 @@ function Place() {
             alt=""
           />
           <Image
-            className="star1 absolute top-[51px] md:top-[105px] lg:top-[115px] left-[50%] translate-x-[-50%] mix-blend-screen"
+            className="star-light absolute top-[51px] md:top-[105px] lg:top-[115px] left-[50%] translate-x-[-50%] mix-blend-screen"
             width={924}
             height={94}
             src="/icons/star6.svg"

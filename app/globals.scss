@@ -252,6 +252,10 @@ body.loading {
   }
 }
 
+.star-light {
+  animation: flash 3s ease-in-out 0s infinite;
+}
+
 .star1 {
   animation: flash 2s ease-in-out 0s infinite;
 }

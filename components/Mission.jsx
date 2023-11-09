@@ -52,7 +52,7 @@ function Mission() {
       >
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1.1)}
-          className="flex flex-col items-center justify-center flex-1"
+          className="flex flex-col items-center justify-center flex-1 mix-blend-screen"
         >
           <div className="relative mb-6 lg:mb-8 w-fit">
             <p className="text-gra text-[120px] md:text-[200px] font-extrabold w-fit leading-[1]">
@@ -76,7 +76,7 @@ function Mission() {
         </motion.div>
         <motion.div
           variants={fadeIn("left", "tween", 0.2, 1.1)}
-          className="flex flex-col items-center justify-center flex-1"
+          className="flex flex-col items-center justify-center flex-1 mix-blend-screen"
         >
           <div className="relative mb-6 lg:mb-8 w-fit">
             <p className="text-gra text-[120px] md:text-[200px] font-extrabold w-fit leading-[1]">
@@ -125,7 +125,7 @@ function Mission() {
       >
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1.5)}
-          className="relative flex-1"
+          className="relative flex-1 mix-blend-screen"
         >
           <Image
             width={1039}
@@ -141,7 +141,7 @@ function Mission() {
             alt=""
           />
           <Image
-            className="star1 mix-blend-screen absolute top-[66px] md:top-[140px] left-[50%] translate-x-[-50%]"
+            className="star-light mix-blend-screen absolute top-[66px] md:top-[140px] left-[50%] translate-x-[-50%]"
             width={900}
             height={132}
             src="/icons/star3.svg"
