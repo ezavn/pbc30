@@ -55,7 +55,7 @@ function Welcome() {
           ></Image>
         </motion.button>
       </motion.div>
-      <div className="absolute inset-0 lg:bg-[#000442]/40 bg-[#000442]/70"></div>
+      <div className="absolute inset-0 lg:bg-[#000442]/60 bg-[#000442]/70"></div>
     </section>
   );
 }

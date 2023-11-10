@@ -148,7 +148,7 @@ function Mission() {
             alt=""
           />
         </motion.div>
-        <div className="w-full lg:max-w-[600px] flex-shrink-0">
+        <div className="w-full lg:max-w-[650px] flex-shrink-0">
           {missionData.map((item, index) => {
             return (
               <motion.div
