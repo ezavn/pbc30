@@ -110,7 +110,8 @@ function Ticket() {
           <p className="text-white text-lg md:text-xl font-bold mb-[20px] md:mb-[32px]">
             * Giá trên đã bao gồm{" "}
             <span className="text-[#C0FFFF]">VAT & Tài liệu</span> <br />* Đăng
-            ký và thanh toán trước ngày <span className="text-[#C0FFFF]"></span>
+            ký và thanh toán trước ngày{" "}
+            <span className="text-[#C0FFFF]">06/12/2023</span>
           </p>
           <div className="h-[59px] w-[300px] md:w-[370px] border border-[#C0FFFF] rounded-[20px] mx-auto inline-flex items-center justify-center text-[18px] md:text-[24px] font-bold mb-[25px] text-white uppercase">
             Thông tin thanh toán
