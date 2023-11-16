@@ -235,17 +235,17 @@ export const benefitData = [
   {
     id: 1,
     content:
-      "Lập kế hoạch hành động năm 2024 & Quý I/2024 theo Cấu trúc chuẩn Quốc tế của Hệ thống ActionCOACH toàn cầu.",
+      "Đánh giá hiện trạng thực hiện Mục tiêu Quý, Năm để điều chỉnh kế hoạch cho năm và Quý I/2024.",
   },
   {
     id: 2,
     content:
-      "Học hỏi Trải nghiệm thực tế của các Chủ doanh nghiệp sau khi vận hành thành công chiến lược cùng ActionCOACH.",
+      "Lập kế hoạch hành động năm 2024 & Quý I/2024 theo Cấu trúc chuẩn Quốc tế của Hệ thống ActionCOACH toàn cầu.",
   },
   {
     id: 3,
     content:
-      "Đánh giá hiện trạng thực hiện Mục tiêu Quý, Năm để điều chỉnh kế hoạch cho năm và Quý I/2024.",
+      "Học hỏi Trải nghiệm thực tế của các Chủ doanh nghiệp sau khi vận hành thành công chiến lược cùng ActionCOACH.",
   },
   {
     id: 4,
@@ -415,5 +415,105 @@ export const coachData = [
     image: "/images/coach9.png",
     name: "VOVA Lê Việt Chuẩn",
     position: "Busines COACH",
+  },
+];
+
+export const day1 = [
+  {
+    id: 1,
+    time: "06h00 - 8h00",
+    content: "Check-in, Giao lưu Networking Ngay 1",
+  },
+  {
+    id: 2,
+    time: "08:00 - 08:10",
+    content: "Chào mừng & Hoạt động “Follow the Leader”",
+  },
+  {
+    id: 3,
+    time: "08:10 - 09:00",
+    content: "Tổng quan chương trình Planning Bootcamp 29",
+  },
+  {
+    id: 4,
+    time: "06h00 - 8h00",
+    content:
+      "Check-in, Giao lưu Networking Check-in, Giao lưu Networking Check-in, Giao lưu Networking",
+  },
+  {
+    id: 5,
+    time: "06h00 - 8h00",
+    content: "Check-in, Giao lưu Networking",
+  },
+  {
+    id: 6,
+    time: "06h00 - 8h00",
+    content: "Check-in, Giao lưu Networking",
+  },
+];
+
+export const day2 = [
+  {
+    id: 1,
+    time: "06h00 - 8h00",
+    content: "Check-in, Giao lưu Networking Ngay 2",
+  },
+  {
+    id: 2,
+    time: "08:00 - 08:10",
+    content: "Chào mừng & Hoạt động “Follow the Leader”",
+  },
+  {
+    id: 3,
+    time: "08:10 - 09:00",
+    content: "Tổng quan chương trình Planning Bootcamp 29",
+  },
+  {
+    id: 4,
+    time: "06h00 - 8h00",
+    content: "Check-in, Giao lưu Networking",
+  },
+  {
+    id: 5,
+    time: "06h00 - 8h00",
+    content: "Check-in, Giao lưu Networking",
+  },
+  {
+    id: 6,
+    time: "06h00 - 8h00",
+    content: "Check-in, Giao lưu Networking",
+  },
+];
+
+export const day3 = [
+  {
+    id: 1,
+    time: "06h00 - 8h00",
+    content: "Check-in, Giao lưu Networking Ngay 3",
+  },
+  {
+    id: 2,
+    time: "08:00 - 08:10",
+    content: "Chào mừng & Hoạt động “Follow the Leader”",
+  },
+  {
+    id: 3,
+    time: "08:10 - 09:00",
+    content: "Tổng quan chương trình Planning Bootcamp 29",
+  },
+  {
+    id: 4,
+    time: "06h00 - 8h00",
+    content: "Check-in, Giao lưu Networking",
+  },
+  {
+    id: 5,
+    time: "06h00 - 8h00",
+    content: "Check-in, Giao lưu Networking",
+  },
+  {
+    id: 6,
+    time: "06h00 - 8h00",
+    content: "Check-in, Giao lưu Networking",
   },
 ];
