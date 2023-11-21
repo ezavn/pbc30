@@ -213,7 +213,7 @@ function RegisterPopup() {
                   </div>
                 </div>
                 <button
-                  className="register-btn absolute -bottom-[70px] left-[12%] md:-bottom-[110px] md:left-[23%] text-darkBlue font-bold font-sans uppercase text-2xl rounded-xl"
+                  className="register-btn absolute -bottom-[75px] left-[17%] md:-bottom-[110px] md:left-[23%] text-darkBlue font-bold font-sans uppercase text-base px-5 py-4 md:px-9 md:py-5 md:text-2xl rounded-xl"
                   type="submit"
                   disabled={loading}
                 >
