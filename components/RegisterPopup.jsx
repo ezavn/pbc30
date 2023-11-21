@@ -213,17 +213,11 @@ function RegisterPopup() {
                   </div>
                 </div>
                 <button
-                  className="absolute -bottom-[70px] left-[12%] md:-bottom-[110px] md:left-[23%]"
+                  className="register-btn absolute -bottom-[70px] left-[12%] md:-bottom-[110px] md:left-[23%] text-darkBlue font-bold font-sans uppercase text-2xl rounded-xl"
                   type="submit"
                   disabled={loading}
                 >
-                  <Image
-                    className="w-[200px] md:w-[271px]"
-                    width={271}
-                    height={72}
-                    alt=""
-                    src="/images/register-btn.png"
-                  />
+                  {loading ? "Đang gửi ..." : "Đăng ký ngay"}
                 </button>
               </form>
             </div>

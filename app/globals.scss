@@ -245,6 +245,11 @@ body.loading {
   padding: 50px 20px;
 }
 
+.register-btn {
+  background-image: linear-gradient(to right bottom, #bf8e3c, #dbbd6c);
+  padding: 20px 35px;
+}
+
 // responsive
 @media (max-width: 1024px) {
   .boxed-child {
