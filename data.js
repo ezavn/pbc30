@@ -421,42 +421,86 @@ export const coachData = [
 export const day1 = [
   {
     id: 1,
-    time: "06h00 - 8h00",
-    content: "Check-in, Giao lưu Networking Ngay 1",
+    time: "12h30 - 13h30",
+    content: "Check-in, Giao lưu Networking",
   },
   {
     id: 2,
-    time: "08:00 - 08:10",
+    time: "13:30 - 13:40",
     content: "Chào mừng & Hoạt động “Follow the Leader”",
   },
   {
     id: 3,
-    time: "08:10 - 09:00",
-    content: "Tổng quan chương trình Planning Bootcamp 29",
+    time: "13:40 - 13:50",
+    content: "Opening (Giới thiệu ActionCOACH Global, Viet Nam, CBD)",
   },
   {
     id: 4,
-    time: "06h00 - 8h00",
-    content:
-      "Check-in, Giao lưu Networking Check-in, Giao lưu Networking Check-in, Giao lưu Networking",
+    time: "13h50 - 14h00",
+    content: "Tổng quan chương trình Planning Bootcamp 30",
   },
   {
     id: 5,
-    time: "06h00 - 8h00",
-    content: "Check-in, Giao lưu Networking",
+    time: "14h00 - 14h20",
+    content: "Game kích hoạt năng lượng",
   },
   {
     id: 6,
-    time: "06h00 - 8h00",
-    content: "Check-in, Giao lưu Networking",
+    time: "14h20 - 15h05",
+    content: "Tư duy và thói quen cốt lõi kiến tạo thành công",
+  },
+  {
+    id: 7,
+    time: "15h05 - 15h10",
+    content: "Thiết lập luật tham gia PBC 30",
+  },
+  {
+    id: 8,
+    time: "15h10 - 15h30",
+    content: "Nghỉ giải lao",
+  },
+  {
+    id: 9,
+    time: "15h10 - 15h30",
+    content: "Nghỉ giải lao",
+  },
+  {
+    id: 10,
+    time: "15h30 - 17h30",
+    content: "Chuyên đề Get a Big Dream kiến tạo BHAG",
+  },
+  {
+    id: 11,
+    time: "17h30 - 17h40",
+    content: "Hướng dẫn & Phân luồng Round Table",
+  },
+  {
+    id: 12,
+    time: "17h40 - 18h25",
+    content: "Hoạt động Round Table",
+  },
+  {
+    id: 13,
+    time: "18h25 - 18h30",
+    content: "BFOs - Bài học nhận được từ Round table",
+  },
+  {
+    id: 14,
+    time: "18h30 - 18h45",
+    content: "Giới thiệu  - hướng  dẫn  cho hoạt  động BÓNG CHUYỀN BÃI BIỂN",
+  },
+  {
+    id: 15,
+    time: "18h45 - 20h25",
+    content: "Ăn tối (tự túc)",
   },
 ];
 
 export const day2 = [
   {
     id: 1,
-    time: "06h00 - 8h00",
-    content: "Check-in, Giao lưu Networking Ngay 2",
+    time: "05h15 - 06h45",
+    content: 'Hoạt động "Bóng chuyền bãi biển"',
   },
   {
     id: 2,
@@ -465,31 +509,67 @@ export const day2 = [
   },
   {
     id: 3,
-    time: "08:10 - 09:00",
-    content: "Tổng quan chương trình Planning Bootcamp 29",
+    time: "08:10 - 08:30",
+    content: "Tổng hợp ngày đầu (BFOs về BHAG & Bóng chuyền)",
   },
   {
     id: 4,
-    time: "06h00 - 8h00",
-    content: "Check-in, Giao lưu Networking",
+    time: "08h30 - 09h45",
+    content: "Phân tích PESTEL & SWOT",
   },
   {
     id: 5,
-    time: "06h00 - 8h00",
-    content: "Check-in, Giao lưu Networking",
+    time: "09h45 - 10h05",
+    content: "Nghỉ giải lao, dùng Tea-break",
   },
   {
     id: 6,
-    time: "06h00 - 8h00",
-    content: "Check-in, Giao lưu Networking",
+    time: "10h05 - 11h15",
+    content:
+      "Mô hình 6 bước Xây dựng Doanh nghiệp thành công. Đánh giá chúng ta đang ở đâu ở mô hình 6 bước",
+  },
+  {
+    id: 7,
+    time: "11h15 - 12h00",
+    content: "Đánh giá lại năm 2023",
+  },
+  {
+    id: 8,
+    time: "12h00 - 13h30",
+    content: "Nghỉ trưa, dùng cơm trưa",
+  },
+  {
+    id: 9,
+    time: "13h30 - 13h40",
+    content: "Warm up đầu giờ",
+  },
+  {
+    id: 10,
+    time: "13h40 - 15h10",
+    content: "Thiết lập mục tiêu - chiến lược năm 2024",
+  },
+  {
+    id: 11,
+    time: "15h10 - 15h30",
+    content: "Nghỉ giải lao",
+  },
+  {
+    id: 12,
+    time: "15h30 - 17h15",
+    content: "5 cách gia tăng doanh thu & lợi nhuận (5 ways) - Năm/Quý",
+  },
+  {
+    id: 13,
+    time: "18h30 - 21h30",
+    content: 'Gala Dinner Chủ đề:"New Be - New Game"',
   },
 ];
 
 export const day3 = [
   {
     id: 1,
-    time: "06h00 - 8h00",
-    content: "Check-in, Giao lưu Networking Ngay 3",
+    time: "05h15 - 06h45",
+    content: 'Hoạt động "Bóng chuyền bãi biển"',
   },
   {
     id: 2,
@@ -498,22 +578,87 @@ export const day3 = [
   },
   {
     id: 3,
-    time: "08:10 - 09:00",
-    content: "Tổng quan chương trình Planning Bootcamp 29",
+    time: "08:10 - 08:40",
+    content: "Tổng hợp hoạt động 2 ngày vừa qua (BFOs về BHAG & Bóng chuyền)",
   },
   {
     id: 4,
-    time: "06h00 - 8h00",
-    content: "Check-in, Giao lưu Networking",
+    time: "08h40 - 09h40",
+    content: "Chi tiết Kế hoạch hành động Quý 1/2024",
   },
   {
     id: 5,
-    time: "06h00 - 8h00",
-    content: "Check-in, Giao lưu Networking",
+    time: "09h40 - 10h00",
+    content: "Nghỉ giải lao, dùng Tea-break",
   },
   {
     id: 6,
-    time: "06h00 - 8h00",
-    content: "Check-in, Giao lưu Networking",
+    time: "10h00 - 11h45",
+    content: "Chi tiết Kế hoạch hành động Quý 1/2024 (tiếp theo)",
+  },
+  {
+    id: 7,
+    time: "11h45 - 12h00",
+    content: "Chia sẻ BFOs",
+  },
+  {
+    id: 8,
+    time: "12h00 - 13h30",
+    content: "Nghỉ trưa, dùng cơm trưa",
+  },
+  {
+    id: 9,
+    time: "13h30 - 13h40",
+    content: "Hoạt động “Follow the Leader”",
+  },
+  {
+    id: 10,
+    time: "13h40 - 13h45",
+    content: "Giới thiệu chuyên đề mới",
+  },
+  {
+    id: 11,
+    time: "13h45 - 14h55",
+    content: "Kế hoạch trên 1 trang giấy",
+  },
+  {
+    id: 12,
+    time: "14h55 - 15h15",
+    content: "Nghỉ giải lao",
+  },
+  {
+    id: 13,
+    time: "15h15 - 16h15",
+    content: "IVVM - Game",
+  },
+  {
+    id: 14,
+    time: "16h15 - 16h20",
+    content: "Giới thiệu chuyên đề mới",
+  },
+  {
+    id: 15,
+    time: "16h20 - 16h35",
+    content: "Giới thiệu PBC31",
+  },
+  {
+    id: 16,
+    time: "16h35 - 16h40",
+    content: "Giới thiệu chuyên đề mới",
+  },
+  {
+    id: 17,
+    time: "16h40 - 17h40",
+    content: "Viết thư, Phiếu đánh giá & Referrals",
+  },
+  {
+    id: 18,
+    time: "17h40 - 18h00",
+    content: "WIFLE - Điều thú vị sau chương trình",
+  },
+  {
+    id: 19,
+    time: "18h00 - 18h10",
+    content: "Kết thúc",
   },
 ];

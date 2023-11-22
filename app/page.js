@@ -24,6 +24,8 @@ import Collections from "@/components/Collections";
 import Testi from "@/components/Testi";
 import Coach from "@/components/Coach";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import Info from "@/components/Info";
+import Agenda from "@/components/Agenda";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -57,6 +59,8 @@ export default function Home() {
             <Active />
             <Coach />
             <Testi />
+            <Info />
+            <Agenda />
             <Ticket />
             <Collections />
             <RegisterPopup />
