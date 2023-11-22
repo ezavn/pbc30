@@ -91,7 +91,7 @@ function Tabs() {
 const AgendaContent = ({ agenda }) => {
   return (
     <div className="flex items-center gap-5 px-2 py-2 text-white border-b md:py-4 lg:gap-11 border-b-white">
-      <h3 className="text-base md:text-xl font-bold w-[96px] md:w-[140px] flex-shrink-0">
+      <h3 className="text-base md:text-xl font-bold w-[110px] md:w-[140px] flex-shrink-0">
         {agenda.time}
       </h3>
       <p className="flex-1 text-base">{agenda.content}</p>
