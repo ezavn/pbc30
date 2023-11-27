@@ -395,7 +395,7 @@ export const coachData = [
   {
     id: 6,
     image: "/images/coach6.png",
-    name: "TAMY Ngọc Thảo",
+    name: "TAMY Lê Thị Ngọc Thảo",
     position: "Busines COACH",
   },
   {
