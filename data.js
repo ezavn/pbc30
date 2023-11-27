@@ -460,11 +460,6 @@ export const day1 = [
     content: "Nghỉ giải lao",
   },
   {
-    id: 9,
-    time: "15h10 - 15h30",
-    content: "Nghỉ giải lao",
-  },
-  {
     id: 10,
     time: "15h30 - 17h30",
     content: "Chuyên đề Get a Big Dream kiến tạo BHAG",
@@ -491,7 +486,12 @@ export const day1 = [
   },
   {
     id: 15,
-    time: "18h45 - 20h25",
+    time: "18h45 - 18h55",
+    content: "Tổng hợp ngày đầu chương trình",
+  },
+  {
+    id: 16,
+    time: "18h55 - 20h35",
     content: "Ăn tối (tự túc)",
   },
 ];
@@ -515,7 +515,8 @@ export const day2 = [
   {
     id: 4,
     time: "08h30 - 09h45",
-    content: "Phân tích PESTEL & SWOT",
+    content:
+      'Phân tích môi trường kinh doanh 2024 : "Lướt" thách thức - "Chớp" cơ hội',
   },
   {
     id: 5,
@@ -524,43 +525,43 @@ export const day2 = [
   },
   {
     id: 6,
-    time: "10h05 - 11h15",
+    time: "10h05 - 11h35",
     content:
       "Mô hình 6 bước Xây dựng Doanh nghiệp thành công. Đánh giá chúng ta đang ở đâu ở mô hình 6 bước",
   },
   {
     id: 7,
-    time: "11h15 - 12h00",
-    content: "Đánh giá lại năm 2023",
-  },
-  {
-    id: 8,
-    time: "12h00 - 13h30",
+    time: "11h35 - 13h00",
     content: "Nghỉ trưa, dùng cơm trưa",
   },
   {
-    id: 9,
-    time: "13h30 - 13h40",
+    id: 8,
+    time: "13h00 - 13h10",
     content: "Warm up đầu giờ",
   },
   {
+    id: 9,
+    time: "13h10 - 13h55",
+    content: "Đánh giá lại năm 2023",
+  },
+  {
     id: 10,
-    time: "13h40 - 15h10",
+    time: "13h55 - 15h25",
     content: "Thiết lập mục tiêu - chiến lược năm 2024",
   },
   {
     id: 11,
-    time: "15h10 - 15h30",
+    time: "15h25 - 15h45",
     content: "Nghỉ giải lao",
   },
   {
     id: 12,
-    time: "15h30 - 17h15",
+    time: "15h45 - 17h30",
     content: "5 cách gia tăng doanh thu & lợi nhuận (5 ways) - Năm/Quý",
   },
   {
     id: 13,
-    time: "18h30 - 21h30",
+    time: "18h30 - 22h00",
     content: 'Gala Dinner Chủ đề:"New Be - New Game"',
   },
 ];
@@ -593,72 +594,67 @@ export const day3 = [
   },
   {
     id: 6,
-    time: "10h00 - 11h45",
+    time: "10h00 - 11h30",
     content: "Chi tiết Kế hoạch hành động Quý 1/2024 (tiếp theo)",
   },
   {
     id: 7,
-    time: "11h45 - 12h00",
-    content: "Chia sẻ BFOs",
-  },
-  {
-    id: 8,
-    time: "12h00 - 13h30",
+    time: "11h30 - 13h00",
     content: "Nghỉ trưa, dùng cơm trưa",
   },
   {
-    id: 9,
-    time: "13h30 - 13h40",
+    id: 8,
+    time: "13h00 - 13h10",
     content: "Hoạt động “Follow the Leader”",
   },
   {
-    id: 10,
-    time: "13h40 - 13h45",
+    id: 9,
+    time: "13h10 - 13h15",
     content: "Giới thiệu chuyên đề mới",
   },
   {
-    id: 11,
-    time: "13h45 - 14h55",
+    id: 10,
+    time: "13h15 - 14h40",
     content: "Kế hoạch trên 1 trang giấy",
   },
   {
-    id: 12,
-    time: "14h55 - 15h15",
+    id: 11,
+    time: "14h40 - 15h00",
     content: "Nghỉ giải lao",
   },
   {
-    id: 13,
-    time: "15h15 - 16h15",
+    id: 12,
+    time: "15h00 - 16h00",
     content: "IVVM - Game",
   },
   {
-    id: 14,
-    time: "16h15 - 16h20",
+    id: 13,
+    time: "16h00 - 16h05",
     content: "Giới thiệu chuyên đề mới",
   },
   {
-    id: 15,
-    time: "16h20 - 16h35",
+    id: 14,
+    time: "16h05 - 16h20",
     content: "Giới thiệu PBC31",
   },
   {
-    id: 16,
-    time: "16h35 - 16h40",
+    id: 15,
+    time: "16h20 - 16h25",
     content: "Giới thiệu chuyên đề mới",
   },
   {
-    id: 17,
-    time: "16h40 - 17h40",
+    id: 16,
+    time: "16h25 - 17h25",
     content: "Viết thư, Phiếu đánh giá & Referrals",
   },
   {
-    id: 18,
-    time: "17h40 - 18h00",
+    id: 17,
+    time: "17h25 - 17h50",
     content: "WIFLE - Điều thú vị sau chương trình",
   },
   {
-    id: 19,
-    time: "18h00 - 18h10",
+    id: 18,
+    time: "17h50 - 18h00",
     content: "Kết thúc",
   },
 ];
